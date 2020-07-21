@@ -46,5 +46,14 @@ end
     end 
   end
   
-  
+  def over?(board)
+  if wond?(board) || full?(board) || draw?(board)
+    return true
+  else 
+    return false 
+  end 
+end 
+
+def winner (board)
+  index = []
   
